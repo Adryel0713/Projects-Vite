@@ -272,7 +272,7 @@ section.content h1 {
 
 /* PROJECT 4 */
 
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -293,4 +293,106 @@ input {
   color: #fff;
   border-radius: 2px;
   box-shadow: 2px 2px 2px 1px rgb(35,35,35);
+} */
+
+/* PROJECT 5 */
+
+
+/* style.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* Container principal */
+.testimonials {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Frase do depoimento */
+.testimonials-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+/* Autor */
+.testimonials-author {
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Botões de navegação */
+.testimonials-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.testimonials-nav button {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.testimonials-nav button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.testimonials-nav button:active {
+  transform: scale(0.95);
+}
+
+/* Efeito de troca */
+.testimonials-quote,
+.testimonials-author {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .testimonials {
+    padding: 30px 20px;
+  }
+
+  .testimonials-quote {
+    font-size: 1rem;
+  }
+
+  .testimonials-nav button {
+    padding: 8px 18px;
+  }
 }

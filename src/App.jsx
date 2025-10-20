@@ -1,7 +1,9 @@
 // import Counter from "./Components/Counter"
 // import Todo from "./Components/Todo.jsx";
 
-import HiddenSearchBar from "./Components/HiddenSearchBar"
+import Testimonials from "./Components/Testimonials"
+
+// import HiddenSearchBar from "./Components/HiddenSearchBar"
 
 // import ToggleBackgroundColor from "./Components/ToggleBackgroundColor"
 
@@ -16,7 +18,8 @@ const App = () => {
       {/* <Meals /> */}
       {/* <Calculator /> */}
       {/* <ToggleBackgroundColor /> */}
-      <HiddenSearchBar />
+      {/* <HiddenSearchBar /> */}
+      <Testimonials />
     </div>
   )
 }
