@@ -1,7 +1,7 @@
 // import Counter from "./Components/Counter"
 // import Todo from "./Components/Todo.jsx";
 
-import Testimonials from "./Components/Testimonials"
+// import Testimonials from "./Components/Testimonials"
 
 // import HiddenSearchBar from "./Components/HiddenSearchBar"
 
@@ -9,6 +9,9 @@ import Testimonials from "./Components/Testimonials"
 
 // import Calculator from "./Components/Calculator"
 // import Meals from "./Components/Meals"
+
+import Accordion from "./Components/Accordion"
+import { accordionData } from "./util/content"
 
 const App = () => {
   return (
@@ -19,7 +22,13 @@ const App = () => {
       {/* <Calculator /> */}
       {/* <ToggleBackgroundColor /> */}
       {/* <HiddenSearchBar /> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
+
+      <div className="accordion">
+        {accordionData.map(({title,content}) => (
+          <Accordion title={title} content={content} />
+        ))}
+      </div>
     </div>
   )
 }
