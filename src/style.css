@@ -42,7 +42,8 @@ body{
     cursor: pointer;
 } */
 
-* {
+/* PROJECT 2 */
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -94,4 +95,143 @@ button{
 .close{
     padding: 5px 10px;
     cursor: pointer;
+} */
+
+/* PROJECT 3 */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.items-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+.card{
+    margin: 10px;
+    padding: 30px;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+p {
+    font-weight: bold;
+}
+img{
+    border-radius: 5px;
+    height: 200px;
+    width: 300px;
+} */
+
+/* === CALCULADORA MODERNA === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1b1b1b;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+  background-color: #111;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
+  gap: 10px;
+}
+
+.calculator .value {
+  grid-column: 1 / -1;
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2.5rem;
+  border: none;
+  outline: none;
+  text-align: right;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.calculator span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #292929;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  box-shadow: 0 3px 0 #1a1a1a;
+}
+
+.calculator span:hover {
+  background-color: #383838;
+}
+
+.calculator span:active {
+  background-color: #ff9d1d;
+  color: #000;
+  transform: scale(0.96);
+}
+
+.calculator span.clear {
+  background-color: #ff3b3b;
+  color: #fff;
+  font-weight: 600;
+  grid-column: span 2;
+}
+
+.calculator span.clear:hover {
+  background-color: #ff5c5c;
+}
+
+.calculator span.operator {
+  background-color: #ff9d1d;
+  color: #111;
+  font-weight: bold;
+  box-shadow: 0 3px 0 #b46a0d;
+}
+
+.calculator span.operator:hover {
+  background-color: #ffb84d;
+}
+
+.calculator span.plus {
+  grid-row: span 2;
+}
+
+.calculator span.zero {
+  grid-column: span 2;
+}
+
+.calculator span.equal {
+  background-color: #ff9d1d;
+  color: #111;
+  font-weight: bold;
 }
